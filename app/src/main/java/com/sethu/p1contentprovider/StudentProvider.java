@@ -132,8 +132,10 @@ public class StudentProvider extends ContentProvider {
                 String id = uri.getPathSegments().get(1);
                 rowsDeleted=db.delete(StudentContract.StudentEntry.TABLE_NAME, StudentContract.StudentEntry._ID +  " = " + id +
                         (!TextUtils.isEmpty(s) ? " AND (" + s + ')' : ""), strings);
+                break;
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
+
 
         }
         if (rowsDeleted != 0) {

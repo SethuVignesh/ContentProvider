@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 ("Vignesh"));
 
         Uri uri = getContentResolver().insert(
-                StudentContract.BASE_CONTENT_URI, values);
+                StudentContract.StudentEntry.CONTENT_URI, values);
 
         Toast.makeText(getBaseContext(),
                 uri.toString(), Toast.LENGTH_LONG).show();
