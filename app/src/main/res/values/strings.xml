@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">P1:ContentProvider</string>
+    <string name="content_authority">com.sethu.p1contentprovider</string>
+
+</resources>
